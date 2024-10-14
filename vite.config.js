@@ -9,5 +9,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base:"/hirez-portal/",
+  base: process.env.NODE_ENV === 'production' ? '/hirez-portal/' : '/',
 })
